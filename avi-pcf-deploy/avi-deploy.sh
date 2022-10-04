@@ -13,6 +13,7 @@ sleep 30
 # Configure NSX-T Cloud
 cd ~/terraform-nsxt/pcf-lab-topology
 terraform init
+terraform import nsxt_policy_tier1_gateway.t1_tas T1-Router-TAS-Deployment
 terraform plan
 terraform apply --auto-approve
 sleep 10
